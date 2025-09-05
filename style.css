@@ -311,3 +311,96 @@ a {
     border-radius: 50%;
     margin-top: -0.35rem;
 }
+
+/* --- Responsive improvements --- */
+
+/* Tablets (below 1024px) */
+@media (max-width: 1024px) {
+    .sidebar {
+        width: 250px;
+    }
+
+    .card {
+        width: 130px;
+        margin-left: 1rem;
+        padding: 1rem;
+    }
+
+    .album img {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+}
+
+/* Mobile (below 768px) */
+@media (max-width: 768px) {
+    .sidebar {
+        display: none; /* hide sidebar */
+    }
+
+    .main {
+        padding: 0; /* remove extra spacing */
+    }
+
+    .main-content {
+        border-radius: 0;
+        padding: 0.5rem;
+        width: 100%;
+    }
+
+    .sticky-nav {
+        padding: 0.5rem;
+    }
+
+    .card-container {
+        justify-content: center;
+    }
+
+    .card {
+        width: 45%;
+        margin: 0.5rem;
+    }
+
+    .music-player {
+        flex-direction: column;
+        height: auto;
+        padding: 0.5rem;
+    }
+
+    .album {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .player {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    .controls {
+        width: 100%;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+
+/* Extra small (below 480px) */
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    .sticky-nav-options {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .favorites {
+        margin-left: 1rem;
+    }
+
+    .song {
+        margin-top: 0.5rem;
+    }
+}
